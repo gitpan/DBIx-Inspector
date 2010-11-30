@@ -22,9 +22,9 @@ no_index:
     - xt
 requires:
   Class::Accessor::Lite: 0
-  Class::Load: 0
   DBI: 0
+  Module::Load: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03

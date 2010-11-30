@@ -2,14 +2,14 @@ package DBIx::Inspector;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use Class::Accessor::Lite;
 Class::Accessor::Lite->mk_accessors(qw/dbh catalog schema driver/);
 use Carp ();
 use DBIx::Inspector::Table;
 use DBIx::Inspector::Iterator;
 use DBIx::Inspector::ForeignKey;
-use Class::Load;
+use Module::Load ();
 
 sub new {
     my $class = shift;
@@ -18,7 +18,7 @@ sub new {
     Carp::croak("missing mandatory parameter: dbh") unless $dbh;
     my $driver_name = $dbh->{Driver}->{Name};
     my $driver_class = "$class\::Driver::$driver_name";
-    Class::Load::load_class($driver_class);
+    Module::Load::load($driver_class);
     return $driver_class->new(%args);
 }
 
