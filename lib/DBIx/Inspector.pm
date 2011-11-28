@@ -2,7 +2,7 @@ package DBIx::Inspector;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 use Class::Accessor::Lite;
 Class::Accessor::Lite->mk_accessors(qw/dbh catalog schema driver/);
 use Carp ();
@@ -71,7 +71,7 @@ Retrieve table objects from $dbh. Every elements in @tables is instance of L<DBI
 
 =head1 AUTHOR
 
-Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF GMAIL COME<gt>
+Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>
 
 =head1 SEE ALSO
 
