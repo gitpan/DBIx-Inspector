@@ -44,7 +44,7 @@
    "provides" : {
       "DBIx::Inspector" : {
          "file" : "lib/DBIx/Inspector.pm",
-         "version" : "0.05"
+         "version" : "0.06"
       },
       "DBIx::Inspector::Column" : {
          "file" : "lib/DBIx/Inspector/Column.pm",
@@ -101,5 +101,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }
