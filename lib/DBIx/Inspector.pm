@@ -2,7 +2,7 @@ package DBIx::Inspector;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 use Class::Accessor::Lite;
 Class::Accessor::Lite->mk_accessors(qw/dbh catalog schema driver/);
 use Carp ();
@@ -66,6 +66,18 @@ Create new instance of DBIx::Inspector.
 =item my @tables = $inspector->tables();
 
 Retrieve table objects from $dbh. Every elements in @tables is instance of L<DBIx::Inspector::Table>.
+
+=item my $table = $inspector->table($table_name);
+
+Retrieve table object from $dbh. Return value is instance of L<DBIx::Inspector::Table>.
+
+=item my @views = $inspector->views();
+
+Retrieve view objects from $dbh. Every elements in @views is instance of L<DBIx::Inspector::Table>.
+
+=item my $view = $inspector->view($view_name);
+
+Retrieve view object from $dbh. Return value is instance of L<DBIx::Inspector::Table>.
 
 =back
 

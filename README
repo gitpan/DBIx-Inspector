@@ -31,6 +31,18 @@ METHODS
         Retrieve table objects from $dbh. Every elements in @tables is
         instance of DBIx::Inspector::Table.
 
+    my $table = $inspector->table($table_name);
+        Retrieve table object from $dbh. Return value is instance of
+        DBIx::Inspector::Table.
+
+    my @views = $inspector->views();
+        Retrieve view objects from $dbh. Every elements in @views is
+        instance of DBIx::Inspector::Table.
+
+    my $view = $inspector->view($view_name);
+        Retrieve view object from $dbh. Return value is instance of
+        DBIx::Inspector::Table.
+
 AUTHOR
     Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>
 

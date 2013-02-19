@@ -4,7 +4,7 @@
       "Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.4001, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -44,7 +44,7 @@
    "provides" : {
       "DBIx::Inspector" : {
          "file" : "lib/DBIx/Inspector.pm",
-         "version" : "0.08"
+         "version" : "0.09"
       },
       "DBIx::Inspector::Column" : {
          "file" : "lib/DBIx/Inspector/Column.pm",
@@ -101,5 +101,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.08"
+   "version" : "0.09"
 }
