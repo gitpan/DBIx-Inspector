@@ -22,7 +22,7 @@ no_index:
 provides:
   DBIx::Inspector:
     file: lib/DBIx/Inspector.pm
-    version: 0.10
+    version: 0.11
   DBIx::Inspector::Column:
     file: lib/DBIx/Inspector/Column.pm
     version: 0
@@ -66,4 +66,4 @@ requires:
   perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.10
+version: 0.11
